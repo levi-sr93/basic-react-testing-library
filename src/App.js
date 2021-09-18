@@ -1,11 +1,12 @@
+import Container from 'react-bootstrap/Container';
 import './App.css';
 import SummaryForm from './pages/summary/SummaryForm';
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <SummaryForm />
-    </div>
+    </Container>
   );
 }
 
