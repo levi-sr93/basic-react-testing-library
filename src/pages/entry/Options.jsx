@@ -31,12 +31,14 @@ export default function Options({optionType}){
 
   const optionItems = items.map((item) => (
     <ItemComponent
-       key={item.name}
-       name={item.name}
-       imagePath={item.imagePath}
-       updateItemCount={(itemName, newItemCount) => updateItemCount(itemName, newItemCount, optionType)}
-     />
-  ))
+      key={item.name}
+      name={item.name}
+      imagePath={item.imagePath}
+      updateItemCount={(itemName, newItemCount) =>
+        updateItemCount(itemName, newItemCount, optionType)
+      }
+    />
+  ));
 
   return (
     <>
